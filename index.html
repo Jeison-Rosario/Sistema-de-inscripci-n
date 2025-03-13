@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/site/style.css">
+    <link rel="stylesheet" href="assets/css/lib/bootstrap/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row d-flexbox justify-content-center col-16" id="container">
+                <div class="mb-3 row card inscription-container">
+                    <div class="card-header bg-dark text-light text-center">
+                        <h3>Sistema de inscripción</h3>
+                    </div>
+            
+                    <div class="card-body inscription d-flexbox justify-content-center offset-1 col-md-10">
+
+                        <div class="row mt-4 mb-5 col-10 col-sm-8 offset-2" id="PI-container">
+
+                            <div class="card personal-info mt-4 mb-5">
+                                <div class="card-header bg-dark text-light text-center rounded">
+                                    <h5>Información personal</h5>
+                                </div>
+                
+                                <div class="card-body personal-info p-4">
+                                    <div class="mb-3 ms-1 me-1 row nombre">
+                                        <label for="nombre" class="form-label fw-bold">Nombre completo</label>
+                                        <input type="text" name="nombre-input" id="nombre" class="input-nombre">
+                                    </div>
+                
+                                    <div class="mb-3 ms-1 me-1 row provincia">
+                                        <label for="provincia" class="form-label fw-bold">Provincia</label>
+                                        <input type="text" name="provincia-input" id="provincia" class="input-provincia">
+                                    </div>
+                
+                                    <div class="mb-3 ms-1 me-1 row ciudad">
+                                        <label for="ciudad" class="form-label fw-bold">Ciudad</label>
+                                        <input type="text" name="ciudad-input" id="ciudad" class="input-ciudad">
+                                    </div>
+    
+                                    <div class="mb-3 ms-1 me-1 row sector">
+                                        <label for="sector" class="form-label fw-bold">Sector</label>
+                                        <input type="text" name="sector-input" id="sector" class="input-sector">
+                                    </div>
+                
+                                    <div class="mb-3 ms-1 me-1 row calle">
+                                        <label for="calle" class="form-label fw-bold">Calle</label>
+                                        <input type="text" name="calle-input" id="calle" class="input-calle">
+                                    </div>
+                
+                                    <div class="mb-3 ms-1 me-1 row carrrera">
+                                        <label for="carrera" class="form-label fw-bold">Carrera</label>
+                                        <select name="carrera-select" id="carrera" class="select-carrera">
+                                            <option value="">Seleccione una carrera</option>
+                                            <option value="Software">Software</option>
+                                            <option value="Multimedia">Multimedia</option>
+                                            <option value="CiberSeguridad">CiberSeguridad</option>
+                                            <option value="VideoJuegos">VideoJuegos</option>
+                                            <option value="Redes">Redes</option>
+                                        </select>
+                                    </div>
+    
+                                    <div class="mb-3 ms-1 me-2">
+                                        <button id="registrar" type="button" onclick="selection()" class="btn btn-success text-light float-end ms-3">Registrar</button>
+                                        <button id="limpiar" type="button" onclick="limpiarInputs()" class="btn btn-warning text-dark float-end">Limpiar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/site/index.js"></script>
+</body>
+<script></script>
+</html>
